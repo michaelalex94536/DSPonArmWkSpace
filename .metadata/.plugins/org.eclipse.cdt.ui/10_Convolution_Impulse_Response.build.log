@@ -1,0 +1,10 @@
+20:52:40 **** Incremental Build of configuration Debug for project 10_Convolution_Impulse_Response ****
+make -j8 all 
+arm-none-eabi-size  10_Convolution_Impulse_Response.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23564	    572	   1900	  26036	   65b4	10_Convolution_Impulse_Response.elf
+Finished building: default.size.stdout
+ 
+
+20:52:42 Build Finished. 0 errors, 0 warnings. (took 1s.237ms)
+

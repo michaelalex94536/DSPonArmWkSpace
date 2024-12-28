@@ -1,0 +1,10 @@
+00:51:39 **** Incremental Build of configuration Debug for project 1_SWV_PlotSignal ****
+make -j8 all 
+arm-none-eabi-size  1_SWV_PlotSignal.elf 
+   text	   data	    bss	    dec	    hex	filename
+    804	   1204	   1572	   3580	    dfc	1_SWV_PlotSignal.elf
+Finished building: default.size.stdout
+ 
+
+00:51:41 Build Finished. 0 errors, 0 warnings. (took 1s.234ms)
+

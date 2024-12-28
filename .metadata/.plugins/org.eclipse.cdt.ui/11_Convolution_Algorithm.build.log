@@ -1,0 +1,10 @@
+21:50:06 **** Incremental Build of configuration Debug for project 11_Convolution_Algorithm ****
+make -j8 all 
+arm-none-eabi-size  11_Convolution_Algorithm.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23780	   1852	   3292	  28924	   70fc	11_Convolution_Algorithm.elf
+Finished building: default.size.stdout
+ 
+
+21:50:07 Build Finished. 0 errors, 0 warnings. (took 1s.235ms)
+

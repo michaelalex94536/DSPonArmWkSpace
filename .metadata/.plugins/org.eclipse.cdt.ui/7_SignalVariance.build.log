@@ -1,0 +1,24 @@
+20:44:56 **** Build of configuration Debug for project 7_SignalVariance ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+../Src/main.c:79:13: warning: 'swv_plot_signal' defined but not used [-Wunused-function]
+   79 | static void swv_plot_signal(void)
+      |             ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "7_SignalVariance.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="7_SignalVariance.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 7_SignalVariance.elf
+ 
+arm-none-eabi-size  7_SignalVariance.elf 
+arm-none-eabi-objdump -h -S 7_SignalVariance.elf  > "7_SignalVariance.list"
+   text	   data	    bss	    dec	    hex	filename
+  25824	   1736	   1912	  29472	   7320	7_SignalVariance.elf
+Finished building: default.size.stdout
+ 
+Finished building: 7_SignalVariance.list
+ 
+
+20:44:58 Build Finished. 0 errors, 1 warnings. (took 1s.337ms)
+

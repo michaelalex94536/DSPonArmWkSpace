@@ -1,0 +1,24 @@
+20:45:26 **** Build of configuration Debug for project 9_SignalStdDev_CMSIS_DSP ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+../Src/main.c:92:13: warning: 'swv_plot_signal' defined but not used [-Wunused-function]
+   92 | static void swv_plot_signal(void)
+      |             ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "9_SignalStdDev_CMSIS_DSP.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="9_SignalStdDev_CMSIS_DSP.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 9_SignalStdDev_CMSIS_DSP.elf
+ 
+arm-none-eabi-size  9_SignalStdDev_CMSIS_DSP.elf 
+arm-none-eabi-objdump -h -S 9_SignalStdDev_CMSIS_DSP.elf  > "9_SignalStdDev_CMSIS_DSP.list"
+   text	   data	    bss	    dec	    hex	filename
+  26760	   1752	   1920	  30432	   76e0	9_SignalStdDev_CMSIS_DSP.elf
+Finished building: default.size.stdout
+ 
+Finished building: 9_SignalStdDev_CMSIS_DSP.list
+ 
+
+20:45:28 Build Finished. 0 errors, 1 warnings. (took 1s.337ms)
+

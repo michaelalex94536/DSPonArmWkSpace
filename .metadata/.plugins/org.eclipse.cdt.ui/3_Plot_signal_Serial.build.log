@@ -1,0 +1,10 @@
+01:04:59 **** Incremental Build of configuration Debug for project 3_Plot_signal_Serial ****
+make -j8 all 
+arm-none-eabi-size  3_Plot_signal_Serial.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23548	   1660	   1900	  27108	   69e4	3_Plot_signal_Serial.elf
+Finished building: default.size.stdout
+ 
+
+01:05:00 Build Finished. 0 errors, 0 warnings. (took 1s.338ms)
+

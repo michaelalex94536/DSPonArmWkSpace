@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/11_Convolution_Algorithm"/>
+			<item value="/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/10_Convolution_Impulse_Response"/>
+			<item value="/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/9_SignalStdDev_CMSIS_DSP"/>
+			<item value="/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/8_SignalStdDev"/>
+			<item value="/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/7_SignalVariance"/>
+			<item value="/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/6_SignalMean"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>
