@@ -1,6 +1,11 @@
-22:21:22 **** Incremental Build of configuration Debug for project 12_Convolution_PlotResults ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/DSP/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/Include" -I"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+10:38:27 **** Build of configuration Debug for project 12_Convolution_PlotResults ****
+make -j7 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f411retx.d" -MT"Startup/startup_stm32f411retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f411retx.o" "../Startup/startup_stm32f411retx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/DSP/Include" -I"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/Include" -I"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/DSP/Include" -I"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/Include" -I"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/DSP/Include" -I"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/Include" -I"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/DSP/Include" -I"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/Include" -I"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411xE -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/DSP/Include" -I"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/Include" -I"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
 ../Src/main.c:137:13: warning: 'serial_plot_imp_resp' defined but not used [-Wunused-function]
   137 | static void serial_plot_imp_resp(void)
       |             ^~~~~~~~~~~~~~~~~~~~
@@ -16,17 +21,17 @@ arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32
 ../Src/main.c:97:13: warning: 'swv_plot_imp_resp' defined but not used [-Wunused-function]
    97 | static void swv_plot_imp_resp(void)
       |             ^~~~~~~~~~~~~~~~~
-arm-none-eabi-gcc -o "12_Convolution_PlotResults.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/12_Convolution_PlotResults/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="12_Convolution_PlotResults.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+arm-none-eabi-gcc -o "12_Convolution_PlotResults.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="12_Convolution_PlotResults.map" -Wl,--gc-sections -static -L"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/12_Convolution_PlotResults/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: 12_Convolution_PlotResults.elf
  
 arm-none-eabi-size  12_Convolution_PlotResults.elf 
 arm-none-eabi-objdump -h -S 12_Convolution_PlotResults.elf  > "12_Convolution_PlotResults.list"
    text	   data	    bss	    dec	    hex	filename
-  23844	   1852	   3292	  28988	   713c	12_Convolution_PlotResults.elf
+  23840	   1852	   3292	  28984	   7138	12_Convolution_PlotResults.elf
 Finished building: default.size.stdout
  
 Finished building: 12_Convolution_PlotResults.list
  
 
-22:21:23 Build Finished. 0 errors, 5 warnings. (took 1s.441ms)
+10:38:28 Build Finished. 0 errors, 5 warnings. (took 564ms)
 

@@ -1,5 +1,5 @@
 /*
- *  Implement the convolution of a signal with a filter impulse response
+ *  Implements the convolution of a signal with a filter impulse response
  */
 
 #include "stm32f4xx.h"

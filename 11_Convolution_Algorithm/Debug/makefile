@@ -59,8 +59,8 @@ all: main-build
 main-build: 11_Convolution_Algorithm.elf secondary-outputs
 
 # Tool invocations
-11_Convolution_Algorithm.elf 11_Convolution_Algorithm.map: $(OBJS) $(USER_OBJS) /home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/11_Convolution_Algorithm/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "11_Convolution_Algorithm.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/11_Convolution_Algorithm/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="11_Convolution_Algorithm.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/11_Convolution_Algorithm/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+11_Convolution_Algorithm.elf 11_Convolution_Algorithm.map: $(OBJS) $(USER_OBJS) /Users/michaelalex/Documents/Git/DSPonArmWkSpace/11_Convolution_Algorithm/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "11_Convolution_Algorithm.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/11_Convolution_Algorithm/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="11_Convolution_Algorithm.map" -Wl,--gc-sections -static -L"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/11_Convolution_Algorithm/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

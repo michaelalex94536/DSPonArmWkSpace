@@ -59,8 +59,8 @@ all: main-build
 main-build: 10_Convolution_Impulse_Response.elf secondary-outputs
 
 # Tool invocations
-10_Convolution_Impulse_Response.elf 10_Convolution_Impulse_Response.map: $(OBJS) $(USER_OBJS) /home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/10_Convolution_Impulse_Response/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "10_Convolution_Impulse_Response.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/10_Convolution_Impulse_Response/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_Convolution_Impulse_Response.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/10_Convolution_Impulse_Response/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+10_Convolution_Impulse_Response.elf 10_Convolution_Impulse_Response.map: $(OBJS) $(USER_OBJS) /Users/michaelalex/Documents/Git/DSPonArmWkSpace/10_Convolution_Impulse_Response/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "10_Convolution_Impulse_Response.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/10_Convolution_Impulse_Response/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_Convolution_Impulse_Response.map" -Wl,--gc-sections -static -L"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/10_Convolution_Impulse_Response/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

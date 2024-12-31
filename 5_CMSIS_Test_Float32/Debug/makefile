@@ -59,8 +59,8 @@ all: main-build
 main-build: 5_CMSIS_Test_Float32.elf secondary-outputs
 
 # Tool invocations
-5_CMSIS_Test_Float32.elf 5_CMSIS_Test_Float32.map: $(OBJS) $(USER_OBJS) /home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/5_CMSIS_Test_Float32/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "5_CMSIS_Test_Float32.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/5_CMSIS_Test_Float32/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_CMSIS_Test_Float32.map" -Wl,--gc-sections -static -L"/home/michael/Documents/Udemy/DSPonARM/DSPonArmWkSpace/5_CMSIS_Test_Float32/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+5_CMSIS_Test_Float32.elf 5_CMSIS_Test_Float32.map: $(OBJS) $(USER_OBJS) /Users/michaelalex/Documents/Git/DSPonArmWkSpace/5_CMSIS_Test_Float32/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "5_CMSIS_Test_Float32.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/5_CMSIS_Test_Float32/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_CMSIS_Test_Float32.map" -Wl,--gc-sections -static -L"/Users/michaelalex/Documents/Git/DSPonArmWkSpace/5_CMSIS_Test_Float32/chip_headers/CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
