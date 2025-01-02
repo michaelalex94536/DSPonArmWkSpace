@@ -12,6 +12,7 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:12_Convolution_PlotResults\ Deb
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_SWV_PlotSignal/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_UART_DRIVER\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:3_Plot_signal_Serial/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:3_Plot_signal_Serial/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:5_CMSIS_Test_Float32/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:5_CMSIS_Test_Float32/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:9_SignalStdDev_CMSIS_DSP\ Debug/activeLaunchMode=run
